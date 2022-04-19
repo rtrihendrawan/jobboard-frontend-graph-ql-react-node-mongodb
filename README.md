@@ -16,15 +16,16 @@ Here we practice a decoupled server backend from frontend clients, where the ser
 ### Create a new file named '.env' right in the root directory
 
 ### Add inside .env file variables as follows:
-`REACT_APP_BACKEND_URL=http://localhost:8000`
-
-`REACT_APP_ASSET_URL=http://localhost:8000`
+```
+REACT_APP_BACKEND_URL=http://localhost:8000
+REACT_APP_ASSET_URL=http://localhost:8000
+```
 
 ### Run the following from command prompt
-
-`npm install`
-
-`npm start`
+```
+npm install
+npm start
+```
 
 ----------------
 ## Online Demo
