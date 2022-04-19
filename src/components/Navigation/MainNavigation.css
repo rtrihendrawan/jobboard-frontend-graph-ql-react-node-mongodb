@@ -1,0 +1,120 @@
+.main-navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3.5rem;
+  background: #5101d1;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.main-navigation__logo h1,
+.main-navigation__logo h1 a {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #dfcefc;
+  text-decoration: none;
+}
+
+.main-navigation__logo h1 a:hover {
+  color: #fff;
+}
+
+.main-navigation__items {
+  margin-left: 1.5rem;
+}
+
+.main-navigation__items ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.main-navigation__items li {
+  margin: 0 1rem;
+}
+
+.main-navigation__items a,
+.main-navigation__items button {
+  text-decoration: none;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  font: inherit;
+  background: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.main-navigation__items a:hover,
+.main-navigation__items a:active,
+.main-navigation__items a.active,
+.main-navigation__items button:hover,
+.main-navigation__items button:active {
+  background: #ffffff;
+  color: #5101d1;
+  border-radius: 5px;
+}
+
+/**
+* Mobile menu
+*/
+@media (min-width: 769px) {
+  .mobile__button {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+}
+#site-mobile-menu {
+  background: #eff2f5;
+  font-size: 1.5em;
+  height: 100vh;
+  overflow: visible;
+  position: absolute;
+  right: 100%;
+  top: -9999rem;
+  width: 100%;
+  opacity: 0;
+  overflow-y: auto;
+  /* transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+  -webkit-transform: translateX(100%); */
+}
+#site-mobile-menu > ul {
+  display: none;
+}
+.eric-open #site-mobile-menu {
+  right: 0;
+  opacity: 1;
+  top: 103%;
+  /* transform: translateX(0); */
+}
+.eric-open ul#site-primary-menu {
+  display: block;
+  position: absolute;
+  top: 7rem;
+  z-index: 2;
+}
+.eric-open ul#site-primary-menu > li {
+  display: block;
+  width: 100%;
+}
+.eric-open ul#site-primary-menu > li > a,
+.eric-open ul#site-primary-menu > li > button.btn.transparent {
+  margin: 0;
+  padding: 0.5rem 1rem 0.5rem;
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+.eric-open ul#site-primary-menu > li > .svg-icon.icon-user {
+  left: 14px !important;
+  top: 6px !important;
+}

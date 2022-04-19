@@ -1,0 +1,73 @@
+.jobs__list-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-bottom: 1px solid #787878;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jobs__list-item:first-child {
+  border-top: 1px solid #787878;
+}
+
+.jobs__list-item h1 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+.jobs__list-item h1,
+.jobs__list-item h1 a {
+  color: #181818;
+}
+.jobs__list-item h1:hover,
+.jobs__list-item h1 a:hover {
+  color: #000;
+  background-color: #eee;
+  text-decoration: none;
+}
+.jobs__list-item .job__item.single h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+.jobs__list-item h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #7c7c7c;
+}
+
+.jobs__list-item h2.wage {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: #585858;
+  text-align: left;
+  font-weight: 400;
+}
+
+.jobs__list-item p,
+.jobs__list-item {
+  margin: 0 0 1rem;
+  white-space: pre-wrap;
+}
+p.btn {
+  display: inline-block;
+  cursor: default;
+}
+.job__item .date,
+p.btn.right {
+  float: right;
+}
+.text-white {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .jobs__list-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .jobs__list-item .list__links {
+    margin: 1rem 0 1.5rem;
+  }
+}

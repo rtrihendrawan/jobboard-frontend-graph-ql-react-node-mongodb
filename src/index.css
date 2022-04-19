@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+form {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.form-control label,
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  display: block;
+}
+
+.form-control label {
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: 2px solid #888;
+  max-width: 85%;
+}
+
+.form-actions button,
+.btn {
+  /* background: var(---color-primary);
+  font: inherit;
+  border: 1px solid var(---color-primary); */
+  border-radius: 3px;
+  padding: 0.25rem 1rem;
+  margin-right: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+  color: white;
+  cursor: pointer;
+}
+button.btn.right {
+  float: right;
+}
+
+/* .form-actions button:hover,
+.form-actions button:active,
+.btn:hover,
+.btn:active {
+  background: var(---color-primary);
+  border-color: var(---color-primary);
+} */
+
+button.transparent,
+button.btn.transparent {
+  font-size: inherit;
+  color: #888;
+  background: none;
+  border: none;
+  padding: inherit;
+  margin: inherit;
+  cursor: pointer;
+  box-shadow: none;
+  text-decoration: underline;
+}
+button.transparent:hover,
+button.btn.transparent:hover {
+  font-size: inherit;
+  color: #000;
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-decoration: none;
+}

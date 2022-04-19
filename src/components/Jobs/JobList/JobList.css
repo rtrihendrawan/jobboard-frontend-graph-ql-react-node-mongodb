@@ -1,0 +1,19 @@
+.job__page,
+.job__list {
+  max-width: 90%;
+  margin: 2rem auto;
+  list-style: none;
+  padding: 0;
+}
+
+.job__page {
+  margin: 5rem auto 2rem;
+  max-width: 30rem;
+}
+
+@media (max-width: 767px) {
+  .job__page {
+    margin: 2rem auto 2rem;
+    max-width: 80%;
+  }
+}
