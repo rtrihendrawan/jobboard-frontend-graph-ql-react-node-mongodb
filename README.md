@@ -21,12 +21,11 @@ REACT_APP_BACKEND_URL=http://localhost:8000
 REACT_APP_ASSET_URL=http://localhost:8000
 ```
 
-### Run the following from command prompt
+### Run the following from command prompt:
 ```
 npm install
 npm start
 ```
-
 ----------------
 ## Online Demo
 <https://rikotrihendrawan.github.io/portfolio/job-board-graphql>
